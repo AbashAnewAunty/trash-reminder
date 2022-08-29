@@ -9,7 +9,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.blue,
+      child: Center(
+        child: Column(
+          children: [
+            Text(
+              "今日は",
+              style: TextStyle(fontSize: 40),
+            ),
+            Image.asset("images/mark_gomi_moyaseru.png"),
+          ],
+        ),
+      ),
     );
   }
 }
