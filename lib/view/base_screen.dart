@@ -12,7 +12,8 @@ class BaseScreen extends StatefulWidget {
 }
 
 class _BaseScreenState extends State<BaseScreen> {
-  final PersistentTabController _controller = PersistentTabController(initialIndex: 1);
+  final PersistentTabController _controller =
+      PersistentTabController(initialIndex: 1);
 
   @override
   Widget build(BuildContext context) {
@@ -34,20 +35,22 @@ class _BaseScreenState extends State<BaseScreen> {
     SettingPage(),
   ];
 
-  List<PersistentBottomNavBarItem> _navBarsItems() => [
-        _navBarItem(
-          icon: Icon(Icons.two_wheeler),
-          title: "Resister",
-        ),
-        _navBarItem(
-          icon: Icon(Icons.home),
-          title: "Home",
-        ),
-        _navBarItem(
-          icon: Icon(Icons.settings),
-          title: "Settings",
-        ),
-      ];
+  List<PersistentBottomNavBarItem> _navBarsItems() {
+    return [
+      _navBarItem(
+        icon: Icon(Icons.two_wheeler),
+        title: "Resister",
+      ),
+      _navBarItem(
+        icon: Icon(Icons.home),
+        title: "Home",
+      ),
+      _navBarItem(
+        icon: Icon(Icons.settings),
+        title: "Settings",
+      ),
+    ];
+  }
 
   PersistentBottomNavBarItem _navBarItem({
     required Widget icon,
