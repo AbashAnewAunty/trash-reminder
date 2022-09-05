@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:persistent_bottom_nav_bar_v2/persistent-tab-view.dart';
 import 'package:trash_reminder/view/home_page.dart';
-import 'package:trash_reminder/view/resister_page.dart';
+import 'package:trash_reminder/view/resister/resister_page.dart';
 import 'package:trash_reminder/view/setting_page.dart';
 
 class BaseScreen extends StatefulWidget {

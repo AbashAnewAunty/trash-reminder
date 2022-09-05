@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:trash_reminder/view/resister/components/resister_garbage_collection_day_list_tile.dart';
 
 /// ゴミ出しの日を登録する画面
 class ResisterPage extends StatelessWidget {
@@ -11,11 +12,11 @@ class ResisterPage extends StatelessWidget {
       child: SingleChildScrollView(
         child: Column(
           children: [
-            _resisterTrashDateBox(),
-            _resisterTrashDateBox(),
-            _resisterTrashDateBox(),
-            _resisterTrashDateBox(),
-            _resisterTrashDateBox(),
+           ResisterGarbageCollectionDayListTile(),
+            ResisterGarbageCollectionDayListTile(),
+            ResisterGarbageCollectionDayListTile(),
+            ResisterGarbageCollectionDayListTile(),
+            ResisterGarbageCollectionDayListTile(),
           ],
         ),
       ),
